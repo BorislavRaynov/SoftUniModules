@@ -1,0 +1,15 @@
+
+directions = {
+    'up': (-1, 0),
+    'down': (1, 0),
+    'left': (0, -1),
+    'right': (0, 1)
+}
+
+all_directions = [(-1, 0), (1, 0), (0, -1), (0, 1), (-1, -1), (-1, 1), (1, -1), (1, 1)]
+
+if r < 0 or r > size - 1 or c < 0 or c > size - 1:
+
+
+first_diagonal_win = [board[i][i] for i in range(size)]
+second_diagonal_win = [board[i][size - 1 - i] for i in range(size)]
