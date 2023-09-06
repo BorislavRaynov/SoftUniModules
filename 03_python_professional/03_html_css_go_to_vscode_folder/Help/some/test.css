@@ -1,0 +1,24 @@
+#news > h1 { color: blue }
+#news article > h1 { background: #eee }
+p:nth-child(2) { background: #cec }
+#news article p { font-size: 10pt }
+#news p > b.red { color: red }
+#news span.date { font-style: italic}
+
+aside {
+    width: 40%;
+    padding-left: 0.5rem;
+    margin-left: 0.5rem;
+    float: left;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-style: italic;
+    color: #29627e;
+}
+
+aside > p {
+    margin: 0.5rem;
+}
+
+p {
+    font-family: 'Fira Sans', sans-serif;
+}

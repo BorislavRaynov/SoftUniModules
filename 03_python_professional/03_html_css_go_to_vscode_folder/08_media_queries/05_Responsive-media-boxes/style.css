@@ -1,0 +1,52 @@
+* {
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(238, 238, 238); 
+    padding: 70px 60px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width: 340px;
+    box-shadow: 0px 0px 3px 3px rgb(0,0,0,0.2);
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255) ;
+}
+
+.card .main_img img{
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 24px;
+}
+
+.content h3 {
+    margin: 0px;
+    font-family: Georgia, serif;
+    font-size: 1em/1.2;
+}
+
+.content p {
+    margin: 6px 0px 18px 0px;
+    font-size: 12px;
+}
+
+.content button {
+    cursor: pointer;
+    background-color: rgb(0, 153, 0);
+    border: hidden;
+    padding: 4px 12px;
+    color: #fff;
+    border-radius: 2px;
+    margin-bottom: 22px;
+    flex-grow: 0;
+    width: 88px;
+    align-self: flex-end;
+}

@@ -1,0 +1,21 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background: #CCCCCC;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+.art-text {
+    font-style: italic;
+}
+
+.para {
+    font-size: 24px;
+}
+
+section {
+    margin-left: 20px;
+}

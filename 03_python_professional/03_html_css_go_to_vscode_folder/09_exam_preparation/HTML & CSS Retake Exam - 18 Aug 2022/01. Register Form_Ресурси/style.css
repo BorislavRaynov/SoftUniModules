@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap");
+
+body {
+  font-family: Mulish, sans-serif;
+  background-image: url("images/background.png");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 50vw;
+  height: auto;
+  background-image: url("images/form-background.png");
+  background-size: cover;
+  margin-top: 84px;
+  border-radius: 12px;
+  box-shadow: 5px 5px 10px 10px rgb(0,0,0,0.2);
+}
+
+section {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin: 24px 32px;
+}
+
+header {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+label {
+  font-size: 10px;
+  margin-bottom: 4px;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+}
+
+.box_terms {
+  flex-direction: row;
+  align-items: center;
+}
+
+.box_terms label {
+  order: 1;
+}
+
+button {
+  margin-top: 32px;
+  cursor: pointer;
+}
+
+input {
+  border-radius: 10px;
+}
+
+.names {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.names div {
+  width: 45%;
+}
+
+button {
+  background-color: brown;
+  color: aliceblue;
+  border-radius: 16px;
+  padding: 4px 8px;
+  width: 50%;
+  align-self: center;
+}
+
+input, button {
+    border: 1px solid lightgrey
+}

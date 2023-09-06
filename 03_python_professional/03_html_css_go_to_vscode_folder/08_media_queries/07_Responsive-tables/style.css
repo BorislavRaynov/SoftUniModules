@@ -1,0 +1,42 @@
+body {
+  background-color: #eeeeee;
+}
+
+th,
+td {
+  border: 1px solid gray;
+  text-align: left;
+  padding: 2px;
+  padding-right: 150px;
+}
+
+table {
+  margin: 20px;
+}
+
+th {
+  background-color: #333333;
+  color: #fff;
+}
+
+tr:first-child {
+  background-color: rgb(234, 231, 231);
+}
+
+tr:nth-child(2) {
+  background-color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  tr {
+    display: flex;
+    flex-direction: column;
+    border-collapse: collapse;
+  }
+
+  th,
+  tr:first-child {
+    background-color: transparent;
+    color: black;
+  }
+}

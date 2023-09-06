@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+
+html {
+    font-family: Courgette, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 120px;
+    background-color: rgb(224, 222, 222);
+}
+
+main {
+    display: flex;
+    gap: 18px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 16px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.card h3 {
+    border-bottom: 1.5px solid red;
+    padding-bottom: 8px;
+    margin-bottom: 0;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+img {
+    width: 100%;
+}
+
+.card .content footer {
+    margin-bottom: 12px;
+    margin-top: auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ i {
+    background-color: rgb(214, 43, 43);
+    color: #fff;
+    border-radius: 50%;
+    padding: 1px 4px;
+ }
+
+ header p {
+    color: rgb(214, 43, 43);
+    margin-top: 0;
+ }
+
+ h1 {
+    margin-bottom: 0;
+ }
+
+ header p {
+    position: relative;
+    left: 70px;
+ }

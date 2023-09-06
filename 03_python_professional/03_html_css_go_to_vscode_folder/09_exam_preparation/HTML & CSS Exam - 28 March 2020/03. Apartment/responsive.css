@@ -1,0 +1,11 @@
+@media screen and (max-width: 468px) {
+    /* header {
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+    } */
+
+    header .div-header {
+        display: none;
+      }
+}

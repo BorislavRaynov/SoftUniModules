@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+    <link rel="stylesheet" href="test.css" />
+  </head>
+  <body>
+    <section id="news">
+      <h1>Hot News</h1>
+      <article>
+        <h1>New Release!</h1>
+        <p>
+          Today we released
+          <b class="red">ver. 7</b>
+          of our unique software …
+        </p>
+      </article>
+      <p>Published: <span class="date">1/1/2021</span></p>
+    </section>
+
+    <p>
+      Salamanders are a group of amphibians with a lizard-like appearance,
+      including short legs and a tail in both larval and adult forms.
+    </p>
+
+    <aside>
+      <p>The Rough-skinned Newt defends itself with a deadly neurotoxin.</p>
+    </aside>
+
+    <p>
+      Several species of salamander inhabit the temperate rainforest of the
+      Pacific Northwest, including the Ensatina, the Northwestern Salamander and
+      the Rough-skinned Newt. Most salamanders are nocturnal, and hunt for
+      insects, worms and other small creatures.
+    </p>
+
+    <fieldset>
+        <legend>SOME LEGEND</legend>
+        <input type="email" value="email" required="true"/>
+        <input type="url" required="true" />
+        <input type="tel" required="true" />
+        <input type="submit" />
+    </fieldset>
+
+    <fieldset>
+        <label for="field_age">Age</label>
+        <input type="number" name="age" id="field_age" min="18" max="99" value="21">
+        <label for="field_sat">Satisfaction</label>
+        <input type="range" name="satisfaction" min="1" max="5" value="3" id="field_sat"> (1-5)
+    </fieldset>
+      
+    <form>
+        <label for="size">Size:</label>
+        <select id="size" name="size">
+          <option value="39">39 EU</option>
+          <option value="40">40 EU</option>
+          <option value="41.5">41.5 EU</option>
+        </select>
+    </form>
+    
+    <textarea rows="10" cols="30">
+Text area is multi-line.
+This is the second line.
+Third line.
+    </textarea>
+        
+    <form method="post" action="">
+
+        <h3 id="logo">Log In</h3>
+      
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Type in your username.." autocomplete="off" required />
+      
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password.." autocomplete="off" required />
+      
+        <a class="forgot" href="#">Forgot Password?</a>
+        <a class="register" href="#">Register</a>
+      
+        <input type="submit" name="submit" value="Log In" />
+      
+      </form>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Original URL</th>
+            <th>Short URL</th>
+            <th>Date Created</th>
+            <th>Visits</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td> <a href="https://nakov.com" target="_blank">https://nakov.com</a></td>
+            <td><a class="shorturl" href="http://shorturl.nakov.repl.co/go/nak">http://shorturl.nakov.repl.co/go/nak</a></td>
+            <td>2021-02-17 14:41:33</td>
+            <td>160</td>
+          </tr>
+          <tr>
+            <td> <a href="https://selenium.dev" target="_blank">https://selenium.dev</a></td>
+            <td><a class="shorturl" href="http://shorturl.nakov.repl.co/go/seldev">http://shorturl.nakov.repl.co/go/seldev</a></td>
+            <td>2021-02-17 22:07:08</td>
+            <td>43</td>
+          </tr>
+          <tr>
+            <td> <a href="https://nodejs.org" target="_blank">https://nodejs.org</a></td>
+            <td><a class="shorturl" href="http://shorturl.nakov.repl.co/go/node">http://shorturl.nakov.repl.co/go/node</a></td>
+            <td>2021-02-19 16:41:56</td>
+            <td>86</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      
+  </body>
+</html>

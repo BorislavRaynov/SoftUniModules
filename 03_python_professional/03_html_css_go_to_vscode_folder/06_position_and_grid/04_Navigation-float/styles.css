@@ -1,0 +1,115 @@
+body {
+  background-color: rgb(238, 238, 238);
+  margin: 50px 70px;
+}
+
+main {
+  display: inline-block;
+  width: 60%;
+}
+aside {
+  width: 30%;
+  float: right;
+}
+
+article p {
+  font-size: smaller;
+}
+
+a {
+  color: rgb(0, 102, 0);
+}
+.first_level {
+  border-bottom: 1px solid black;
+}
+
+.first_level p {
+  display: inline-block;
+  width: 69%;
+  font-size: xx-large;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.first_level nav {
+  display: inline-block;
+  width: 30%;
+}
+
+.first_level ul {
+  position: relative;
+  top: -10px;
+  left: 55px;
+  list-style: none;
+  width: 170px;
+}
+
+.first_level li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.first_level a {
+  text-decoration: none;
+  font-size: x-small;
+}
+
+img {
+  border: 1px solid black;
+  padding: 3px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+img.first {
+  float: right;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  width: 20%;
+  height: 20%;
+}
+
+img.second {
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 5px;
+  width: 25%;
+  height: 25%;
+}
+
+blockquote {
+  border-left: 5px solid rgb(221, 221, 221);
+  padding-left: 15px;
+  margin: 0 auto;
+  font-family: Georgia, serif;
+  font-size: 13px;
+  font-weight: 100;
+  font-style: italic;
+  /* background-color: orange; */
+}
+
+blockquote p {
+  text-align: right;
+}
+
+.grided {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+div .left_p {
+  margin: 0 auto;
+  padding-right: 10px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Georgia, serif;
+  font-size: 1em/1.2;
+}
+
+aside ul a {
+  text-decoration: none;
+  font-size: 12px;
+}

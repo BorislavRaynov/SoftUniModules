@@ -1,0 +1,22 @@
+header {
+    background: #f2dcbb;
+    padding: 5px 15px;
+    width: 480px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #f2dcbb;
+    padding: 5px 15px;
+    width: 480px;
+    margin: 0 auto;
+}
+
+body {
+    background: #f9f7cf;
+}
+
+main {
+    width: 480px;
+    margin: 0 auto;
+}

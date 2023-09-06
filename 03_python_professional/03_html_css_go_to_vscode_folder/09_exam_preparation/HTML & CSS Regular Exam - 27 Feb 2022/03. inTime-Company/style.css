@@ -1,0 +1,250 @@
+@import url(https://use.fontawesome.com/releases/v5.6.3/css/all.css);
+/* 
+main_blue - #008cba
+light_blue - #6bbfff
+
+btn_grey - #454545
+
+lightest_gray - #eef0f1
+light_gray - #393f43
+lighter_gray - #2f3539
+dark_gray - #262b2f
+
+main_padding - 156px
+*/
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 156px;
+}
+
+.blue {
+  color: #008cba;
+}
+header h3 {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+header .item {
+  margin-left: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #393f43;
+}
+
+header .items .u-line {
+  border-bottom: 2px solid #008cba;
+}
+
+header .items {
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+}
+
+.pic-area .promote {
+  background: rgb(0, 0, 0, 0.5);
+  max-width: 450px;
+  height: auto;
+  padding: 18px 18px;
+  color: #fff;
+  position: absolute;
+  bottom: 250px;
+  left: 156px;
+  font-size: 22px;
+}
+
+.pic-area .promote h1 {
+  font-weight: 500;
+  letter-spacing: 2.5px;
+}
+
+.pic-area .promote button {
+  cursor: pointer;
+  margin-top: 12px;
+  border-radius: 24px;
+  padding: 4px 24px;
+  background-color: #008cba;
+  color: #fff;
+  border: hidden;
+  font-size: 18px;
+}
+
+.pic-area img {
+  position: relative;
+  height: 80vh;
+  width: 100%;
+}
+
+.info-company {
+  padding: 0 156px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.h-uline {
+  border-top: 3px solid #6bbfff;
+  width: 60px;
+  margin-bottom: 24px;
+}
+
+.sec-header {
+  margin-top: 32px;
+  font-size: 32px;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+}
+
+.info-company .content {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.bl-btn {
+  cursor: pointer;
+  color: #fff;
+  background-color: #454545;
+  padding: 2px 20px;
+  border-radius: 4px;
+}
+
+.bl-btn.radius {
+  padding: 4px 24px;
+  border-radius: 28px;
+  margin-bottom: 32px;
+}
+
+.info-services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #eef0f1;
+  padding-bottom: 32px;
+}
+
+.info-services .grey {
+  border-top: 3px solid #262b2f;
+}
+
+.info-services .cards {
+  padding: 0px 156px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+}
+
+.info-services .card {
+    background-color: #fff;
+}
+
+.card .card-content {
+  text-align: center;
+  padding: 12px 24px;
+}
+
+.card-content h4, .card-pic, .card-content p, .card-content button {
+    margin-bottom: 18px;
+}
+
+.card-content h4 {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.subscr {
+    background-color: #393f43;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 0px;
+}
+
+.subscr h2 {
+    margin-top: 0px;
+    font-weight: 500;
+}
+
+.subscr h4 {
+    font-weight: 100;
+    margin-top: 0px;
+    margin-bottom: 32px;
+}
+
+.subscr .h-uline.grey {
+    margin-bottom: 8px;
+    border: 2px solid #fff;
+    width: 85px;
+    border-radius: 2px;
+}
+
+.subscr .container input{
+    width: 400px;
+    background-color: #545a5e;
+    border: hidden;
+    border-radius: 4px;
+    height: 28px;
+    margin-right: 8px;
+}
+
+.subscr .container button {
+    border: hidden;
+    padding: 4px 20px;
+    color: #fff;
+    border-radius: 6px;
+    background-color: #6bbfff;
+    font-size: 12px;
+}
+
+.subscr .container {
+    display: flex;
+    align-items: center;
+}
+
+.metadata {
+    padding: 38px 156px;
+    background-color: #2f3539;
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    font-weight: 100;
+}
+
+.metadata h4 {
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.metadata li, .metadata p {
+    margin-bottom: 6px;
+}
+
+.meta-container .address {
+    margin-bottom: 32px;
+}
+
+.icons i{
+    margin-right: 14px;
+}
+
+.license {
+    background-color: #262b2f;
+    color: #fff;
+    font-weight: 100;
+    padding: 18px 0px;
+    text-align: center;
+}
+
+.metadata a {
+    text-decoration: none;
+    color: #fff;
+}

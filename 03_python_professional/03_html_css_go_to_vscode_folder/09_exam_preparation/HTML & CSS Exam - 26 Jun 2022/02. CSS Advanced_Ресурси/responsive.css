@@ -1,0 +1,39 @@
+@media screen and (max-width: 600px) {
+
+  main {
+    vertical-align: middle;
+  }
+
+  .left-to-right:nth-child(1) {
+    padding: 18px;
+  }
+
+  main section.left-to-right:nth-child(3) {
+    padding: 12px;
+  }
+
+  main .left-to-right article {
+    padding: 8px;
+    border-radius: 25%;
+  }
+
+  button {
+    display: none;
+  }
+
+  main section:nth-child(2),
+  main section:nth-child(4) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section form label input,
+  section form textarea {
+      width: 100%;
+  }
+
+  section form {
+    width: 100%;
+    vertical-align: middle;
+  }
+}

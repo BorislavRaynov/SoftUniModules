@@ -1,0 +1,53 @@
+@media screen and (max-width: 600px) {
+    .row {
+        display: block;
+    }
+
+    .tm-welcome-section {
+        text-align: center;
+    }
+
+    .tm-section-title {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-left: 0px;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .tm-gallery-page {
+        margin: 0px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tm-gallery-title {
+        font-weight: 700;
+    }
+
+    .tm-gallery-price {
+        font-weight: bold;
+    }
+    
+    .tm-cta-section {
+
+        width: 100%;
+
+    }
+
+    .tm-header-inner {
+        padding: 40px 10px;
+
+    }
+
+    .col-md-6 {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}

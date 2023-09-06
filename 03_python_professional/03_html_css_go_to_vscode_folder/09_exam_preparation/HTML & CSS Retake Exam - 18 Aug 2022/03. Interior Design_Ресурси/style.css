@@ -1,0 +1,183 @@
+@import url(https://use.fontawesome.com/releases/v5.6.3/css/all.css);
+
+/*
+
+bg-brown - #bab1ad
+bg-light - #f2f0f3
+btn-bg - #67784d
+
+*/
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Abril Fatface", cursive;
+}
+
+body {
+  padding: 0 8rem;
+}
+
+header {
+  position: relative;
+}
+
+header img {
+  height: 80vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+header .top-left {
+  position: absolute;
+  top: 2.5rem;
+  left: 3rem;
+  box-shadow: 0px 0px 3px 3px rgb(0, 0, 0, 0.2);
+  width: 16rem;
+  padding: 1rem 4rem 1rem 0.5rem;
+}
+
+header .top-left h1 {
+  font-size: 2.75rem;
+  border-bottom: 2px solid black;
+  padding-bottom: 0.5rem;
+  border-color: #fff;
+}
+
+header .top-left h4 {
+  font-size: 0.75rem;
+  font-weight: 100;
+  letter-spacing: 1px;
+  padding-top: 0.5rem;
+}
+
+.mid-right {
+  background: rgb(186, 177, 173);
+  background: linear-gradient(
+    90deg,
+    rgba(186, 177, 173, 1) 0%,
+    rgba(231, 231, 231, 1) 100%
+  );
+  color: #fff;
+  width: 22rem;
+  padding: 4rem 1rem 1.5rem 1.5rem;
+  text-align: right;
+  box-shadow: 0px 0px 3px 3px rgb(0, 0, 0, 0.2);
+  position: absolute;
+  top: 40%;
+  right: 2.5rem;
+}
+
+.mid-right i {
+  color: #8d8581;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "art art art as";
+}
+
+main aside {
+  grid-area: as;
+}
+
+main article {
+  grid-area: art;
+  display: flex;
+  flex-direction: column;
+}
+
+.services {
+  background-color: #f2f0f3;
+  padding: 5rem;
+  border-bottom: 1px solid black;
+  padding-bottom: 6rem;
+  height: 80%;
+}
+.services h2 {
+  text-transform: uppercase;
+  font-size: 2.75rem;
+  margin-bottom: 2rem;
+}
+
+.services .items .item .cap-bolded {
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-left: 1rem;
+}
+
+.services .items .item {
+  margin-bottom: 1.75rem;
+}
+
+.contact {
+  position: relative;
+  background-color: #f2f0f3;
+  padding: 3rem 5rem;
+  height: 20%;
+}
+
+.contact h2 {
+  position: absolute;
+  top: -4rem;
+  text-transform: uppercase;
+  font-size: 2.75rem;
+}
+
+.contact .form {
+  margin-top: 1rem;
+  display: flex;
+  width: 50%;
+}
+
+.contact .form input {
+  background-color: #bab1ad;
+  border: hidden;
+  border-radius: 0.25rem;
+  padding: 0.5rem 0.5rem;
+  margin-right: auto;
+  width: 70%;
+}
+
+::placeholder {
+  color: #fff;
+  font-weight: 100;
+  font-size: 0.75rem;
+}
+
+.form .btn {
+  cursor: pointer;
+  background-color: #67784d;
+  border: hidden;
+  border-radius: 0.25rem;
+  color: #fff;
+  padding: 0.5rem 1.25rem;
+  font-size: 0.75rem;
+}
+
+aside.info {
+  background-color: #bab1ad;
+  padding: 5rem 2rem;
+}
+
+.info-item .white {
+  color: #fff;
+  font-size: 5.5rem;
+  font-weight: 100;
+}
+
+.info-item .under {
+  text-transform: uppercase;
+  font-size: 1.15rem;
+}
+
+aside.info .info-item:not(:last-child) {
+  margin-bottom: 4rem;
+}

@@ -1,0 +1,47 @@
+@import url(https://use.fontawesome.com/releases/v5.6.3/css/all.css);
+
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+    /* padding: 24px 340px; */
+}
+
+legend {
+    width: 100px;
+    border: 1px solid #c0c0c0;
+    padding: 4px 6px;
+}
+
+p {
+    position: relative;
+}
+
+i {
+    position: absolute;
+    top: 2px;
+    left: 72px;
+}
+
+input:focus{
+    background-color: #c0c0c0;
+}
+
+fieldset {
+    padding: 20px 28px;
+}
+
+button {
+    cursor: pointer;
+    background-color: black;
+    color: #fff;
+    padding: 3px 12px;
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 318px){
+    i {
+        top: 20px;
+        left: 4px;
+    }
+}

@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+/* 
+main fcolor - #a3a4a6
+header fcolor - #b9b9b9
+bg - #ffffff
+bg grey - #575757
+btn bg - #ff0000
+bg lightgrey - #dadada
+*/
+ 
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+}
+
+header {
+    margin-bottom: 84px;
+}
+main {
+    padding: 24px 128px;
+}
+
+.h_items {
+    display: flex;
+    justify-content: space-around;
+}
+
+.h_items a {
+    text-decoration: none;
+    color: #b9b9b9;
+}
+
+.primary_content {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 68px;
+    vertical-align: middle;
+}
+
+
+.primary_content div {
+    padding: 24px 0px;
+}
+
+
+.adv h2 {
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+.adv h2, p, button{
+    margin-bottom: 38px;
+}
+
+.adv_primary header, p, footer{
+    margin-bottom: 38px;
+}
+
+.btn {
+    cursor: pointer;
+    background-color: #ff0000;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 4px 24px;
+    border-radius: 16px;
+    border: hidden;
+}
+
+.adv_primary header h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.adv_primary .sub_title {
+    padding-top: 0px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.adv_primary .sub_title span{
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.adv_primary p {
+    margin-bottom: 52px;
+}
+
+.adv_primary .price {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-right: 52px;
+}
+
+.secondary_content {
+    background-color: #575757;
+    padding: 42px 0px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.secondary_content header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondary_content a {
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 1px solid #fff
+}
+
+.secondary_content header img {
+    width: 18%;
+    margin-right: 42px;
+}
+
+.secondary_content header p{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 0;
+}
+
+.secondary_content header p span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.pictures {
+    display: flex;
+}
+
+.next_to_girl {
+    display: flex;
+    justify-content: space-around;
+    background-color: #dadada;
+    align-items: center;
+}
+
+.pictures div {
+    width: 50%;
+}
+
+footer {
+    text-align: center;
+    padding-top: 32px;
+    color: #a3a4a6;
+    font-size: 1.2rem;
+}
+
+.girl img {
+    width: 100%;
+}
+
+.next_to_girl .content h1 {
+    font-size: 6rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: right;
+}
+
+.next_to_girl .content h3 span{
+    font-size: 1.5rem;
+}
+
+.next_to_girl .content h3 {
+    text-align: right;
+}
+
+.next_to_girl .content .red {
+    color: red;
+    text-transform: uppercase;
+    font-weight: bold;
+}

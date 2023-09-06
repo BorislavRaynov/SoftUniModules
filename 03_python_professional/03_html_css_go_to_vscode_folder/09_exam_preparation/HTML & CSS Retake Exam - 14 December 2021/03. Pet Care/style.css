@@ -1,0 +1,246 @@
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+/*
+red_btn_color - ##ea3b10
+color_btn - #ea3b10
+p_color - #929294
+
+main_padding: 20px 120px;
+ */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    max-width: 1380px;
+    margin: 20px auto;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+ header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 220px;
+    margin-bottom: 20px;
+ }
+
+ header .nav-items {
+    display: flex;
+ }
+
+ header .item a{
+    text-decoration: none;
+    margin-left: 24px;
+    color: black;
+    font-size: 0.75rem;
+ }
+
+ .welcome {
+    position: relative;
+ }
+
+.welcome .container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+    left: 220px;
+    color: #fff;
+}
+
+.welcome .container img {
+    width: 60%;
+}
+
+
+.container .content h1{
+    font-weight: 100;
+    font-size: 3.5rem;
+    margin-bottom: 12px;
+    color: #fff;
+    line-height: 3.75rem;
+    letter-spacing: 0.25rem;
+}
+
+.bolded {
+    font-weight: 900;
+}
+
+.container .content .item {
+    margin-bottom: 36px;
+}
+
+.container .content {
+    width: 300px;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 8px 36px;
+    border-radius: 24px;
+    color: #ea3b10;
+    background-color: #fff;
+    border: hidden;
+}
+
+.services {
+    padding: 20px 220px;
+    margin-top: 150px;
+}
+
+.services header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.services .cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 200px;
+}
+
+.cards .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ea3b10;
+    padding: 80px 20px;
+    border-radius: 8px;
+    width: 32.5%;
+}
+
+.card:first-child {
+    border-right: hidden;
+}
+
+.card:last-child {
+    border-left: hidden;
+}
+
+.card .card-pic {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.card .card-pic .animal {
+    position: absolute;
+    top: 30px;
+    left: 35px;
+}
+
+.card-content {
+    text-align: center;
+}
+
+.card-content h3 {
+    margin-bottom: 20px;
+}
+
+.services header h2 {
+    font-size: 2.5rem;
+}
+
+.pic-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pic-content img, .pic-content .info{
+    width: 40%;
+}
+
+.pic-content .info {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-top: 80px;
+}
+
+.pic-content .info h2 {
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 3.5rem;
+    margin-bottom: 35px;
+}
+
+.btn.red {
+    color: #fff;
+    background-color: #ea3b10;
+    margin-top: 30px;
+    width: 150px;
+}
+
+.about-us {
+    position: relative;
+}
+
+.about-us .about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    translate: transform(-50% -50%);
+    color: #fff;
+
+}
+
+.about-us .about-contacts {
+    display: flex;
+    align-items: center;
+}
+
+.about-content h2, .about-content p {
+    margin: 20px;
+}
+
+.about-content h2 {
+    font-size: 3rem;
+}
+
+.about-content p {
+    width: 450px;
+    text-align: center;
+}
+
+.about-contacts p{
+    margin-left: 8px;
+    width: 40%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 110px 220px;
+}
+
+footer section {
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+}
+
+footer section:last-child img{
+    width: 60%;
+    margin-bottom: 30px;
+}
+
+footer section h3 {
+    margin-bottom: 30px;
+}
+
+footer section p, footer section a {
+    margin-bottom: 15px;
+}
+
+footer section a  {
+    text-decoration: none;
+}

@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Lato:ital,wght@1,100&display=swap');
+
+* {
+    font-family: Lato, sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+body {
+    padding: 32px 96px;
+    max-height: 700vh;
+}
+
+h3 {
+    margin-top: 0;
+}
+
+img {
+    width: 45%;
+    height: 45%;
+}
+
+section {
+    width: 45%;
+    height: 45%;
+    font-size: 14px;
+}
+ ul {
+    list-style: none;
+    padding: 0;
+ }
+
+ ul img {
+    width: 40px;
+ }
+
+ li {
+    display: flex;
+ }
+
+ h1 {
+    text-align: center;
+ }
+
+ div {
+    margin-left: 8px;
+ }
+
+ div h4 {
+    margin: 0 0;
+ }
+
+ div p {
+    margin-top: 3px;
+ }

@@ -1,0 +1,255 @@
+@import url(https://use.fontawesome.com/releases/v5.6.3/css/all.css);
+
+/* 
+purple - #68347b
+*/
+
+* {
+  font-size: 12px;
+}
+
+header {
+  padding: 8px 188px;
+}
+
+header h2 {
+  font-size: 34px;
+  color: #68347b;
+}
+
+header p {
+  text-transform: uppercase;
+  letter-spacing: -2px;
+}
+
+header nav {
+  margin-left: auto;
+}
+
+header .items {
+  display: flex;
+}
+
+.items a {
+  text-decoration: none;
+  margin-left: 16px;
+  color: black;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+.first {
+  display: flex;
+  padding: 24px 208px;
+}
+
+.first h1 {
+  font-size: 32px;
+}
+
+.first .content_item {
+  margin-bottom: 12px;
+}
+
+.first i {
+  font-size: 148px;
+  padding-left: 98px;
+}
+
+.first.content {
+  display: inline-block;
+}
+
+.first p.content_item {
+  width: 340px;
+}
+
+.grid_section .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.grid_section .header h2 {
+  font-size: 32px;
+}
+
+.grid_section .header div {
+  border-top: 2px solid black;
+  width: 50px;
+}
+
+h5,
+h6 {
+  margin: 0px;
+}
+
+.grid_section .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding-top: 24px;
+  gap: 24px;
+  text-align: center;
+}
+
+.grid_section {
+  padding: 24px 208px;
+}
+
+.grid_section .cards .card img {
+  height: 100px;
+  width: 50%;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.grid_section .card_content {
+  margin-top: 24px;
+}
+
+.third {
+  background-color: #68347b;
+}
+
+.third .header h2 {
+  font-size: 32px;
+  color: #fff;
+}
+
+.third .header div {
+  border-top: 2px solid black;
+  width: 50px;
+}
+
+.third .header {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.third .input_data {
+  display: flex;
+  justify-content: center;
+  padding-top: 24px;
+  padding-bottom: 48px;
+}
+
+.third .input_data input {
+  margin-right: 12px;
+}
+
+.grid_section h5 {
+  margin-top: 24px;
+}
+
+.fourth {
+  margin-bottom: 86px;
+}
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+  padding: 48px 208px;
+  border-top: 4px solid lightgray;
+}
+
+footer h2 {
+  font-size: 26px;
+}
+
+footer h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+footer i {
+  margin-right: 8px;
+}
+
+footer .map_items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 840px) {
+  header,
+  footer,
+  .first,
+  .second,
+  .third,
+  .fourth {
+    padding: 8px 96px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .first i {
+    padding-left: 0px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  header,
+  footer,
+  .first,
+  .second,
+  .third,
+  .fourth {
+    padding: 8px 8px;
+  }
+
+  .first i {
+    font-size: 74px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header .items {
+    display: none;
+  }
+
+  .grid_section .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding-top: 24px;
+    gap: 24px;
+    text-align: center;
+  }
+  .first i {
+    font-size: 54px;
+  }
+
+  .first .content {
+    width: 80%;
+  }
+
+  .first .content_item,
+  .first p.content_item {
+    width: auto;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 12px;
+  }
+
+  header {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  .third .header {
+text-align: center;
+  }
+}

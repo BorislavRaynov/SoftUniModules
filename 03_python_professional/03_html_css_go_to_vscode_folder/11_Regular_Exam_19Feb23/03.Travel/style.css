@@ -1,0 +1,190 @@
+@import url(https://use.fontawesome.com/releases/v5.6.3/css/all.css);
+
+/* 
+----COLORS----
+main-bg - #ffffff
+bg-black  - #000000
+bg-btn-bl - #370511
+border-btn-wh - #c5b6ba
+fcolor-footer - #8f95a9
+    padding-left: 12rem;
+    padding-right: 12rem;
+*/
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    max-width: 1400px;
+    background-color: #000000;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+    background-color: #ffffff;
+}
+
+.main-h {
+    position: relative;
+}
+
+.main-h .data {
+    position: absolute;
+    padding: 1rem 12rem;
+    top: 0px;
+    width: 100%;
+}
+.main-h img {
+    width: 100%;
+    height: 60vh;
+}
+
+.main-h .data h3{
+    font-size: 2rem;
+}
+
+.top-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10rem;
+}
+
+.top-header .wrapper {
+    display: flex;
+    margin-left: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-h .top-header .links {
+    display: flex;
+
+}
+
+.main-h .link, .main-h .btn-black {
+    margin-left: 1rem;
+} 
+
+.main-h .top-header .links a {
+    text-decoration: none;
+    color: #938e8d;
+}
+
+.btn-black {
+    cursor: pointer;
+    background-color: #370511;
+    color: #fff;
+    border-radius: 1.5rem;
+    padding: 0.25rem 2rem;
+
+}
+
+.main-h .meta-data h1{
+    font-size: 3rem;
+}
+
+.main-h .meta-data h3 {
+    margin-bottom: 1rem;
+}
+
+.main-h .meta-data .btn-black.bl{
+    margin-left: 0px;
+    margin-top: 1rem;
+}
+
+main {
+    padding: 2rem 12rem;
+}
+
+main header {
+    margin-bottom: 3rem;
+}
+
+main header h2 {
+    text-align: center;
+    font-size: 1.75rem;
+}
+
+main header h3 {
+    text-align: center;
+    font-size: 0.75rem;
+    color: #8f95a9;
+}
+
+main .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 3rem
+    ;
+}
+
+main .cards .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 1rem;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+
+.card .img-wrapper {
+    height: 204px;
+    overflow: hidden;
+}
+
+.card img {
+    object-fit: contain;
+}
+
+.card h4, .card button {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card .btn-white {
+    cursor: pointer;
+    background-color: #fff;
+    border: 2px solid #c5b6ba;
+    border-radius: 2rem;
+    padding: 0.75rem 2.5rem;
+}
+
+footer {
+    color: #8f95a9;
+    padding: 2rem 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000;
+}
+
+footer h2 {
+    color: #ffffff;
+}
+
+footer .f-links {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .f-links a {
+    margin-bottom: 0.25rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: #8f95a9;
+}
+
+
+footer .i-wrapper {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
