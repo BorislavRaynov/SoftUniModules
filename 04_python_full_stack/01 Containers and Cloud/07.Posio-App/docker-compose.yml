@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+    app:
+      build: .
+      volumes:
+        - posio:/posio
+      environment:
+        - POSIO_SETTINGS=/app/config.py
+      ports:
+        - 5000:5000
+      image: posioappcrbobi1.azurecr.io/posioapp-image
+      
+volumes:
+    posio:
+      driver: azure_file
+      driver_opts:
+        share_name: posio
+        storage_account_name: posiostorageaccountbr1
