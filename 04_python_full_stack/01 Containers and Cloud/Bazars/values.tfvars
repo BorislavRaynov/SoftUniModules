@@ -1,0 +1,11 @@
+#My username prefix has been set without the undescore in it just in case for Azure.
+resource_group_name              = "braynovbazarsrg2"
+resource_group_location          = "West Europe"
+app_service_plan_name            = "braynovbazars-sp"
+app_service_name                 = "braynovbazars"
+sql_server_name                  = "braynovbazars-sql"
+sql_database_name                = "braynovbazars-db"
+sql_administrator_login_username = "Bobi1"
+sql_administrator_login_password = "Qwer_1234"
+firewall_rule_name               = "braynovbazars-fw"
+github_repo                      = "https://github.com/BorislavRaynov/Bazars"
