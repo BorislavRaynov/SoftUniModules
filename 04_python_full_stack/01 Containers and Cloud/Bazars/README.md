@@ -1,0 +1,2 @@
+# Bazars
+terraform solution
