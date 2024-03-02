@@ -1,0 +1,62 @@
+name: Build Test Deploy
+
+on:
+  push:
+    branches: [ "main" ]
+    
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Use Node.js 18
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18.x
+        cache: 'npm'
+
+    - name: Build app
+      run: npm install
+
+    - name: Start Frontend
+      run: npm run start-fe &
+
+    - name: Start Backend
+      run: npm run start-be &
+
+    - name: Set up Playwright
+      run: npx playwright install
+    
+    - name: Change config value
+      run: echo "export const settings = { host:\"http://localhost:3030\" };" > src/config.js
+
+    - name: Run Intergration test
+      run: npm run test
+    
+  deploy-backend:
+    needs: build-test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Render Deploy Backend Action
+        uses: johnbeynon/render-deploy-action@v0.0.8
+        with:
+          service-id: ${{ secrets.LIBRARY_RENDER_BE_SERVICE_ID }}
+          api-key: ${{ secrets.MY_RENDER_API_KEY }}
+
+  deploy-frontend:
+    needs: deploy-backend
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Render Deploy Frontend Action
+        uses: johnbeynon/render-deploy-action@v0.0.8
+        with:
+          service-id: ${{ secrets.RENDER_FRONTEND_KEY }}
+          api-key: ${{ secrets.MY_RENDER_API_KEY }}
