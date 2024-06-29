@@ -1,6 +1,7 @@
 import Navigation from "./Components/Navigation"
 import Header from "./Components/Header"
 import About from "./Components/About"
+import WatchNow from "./Components/WatchNow"
 
 function App() {
   return (
@@ -11,21 +12,7 @@ function App() {
 
         <About />
 
-        <section className="video-section prelative text-center white">
-          <div className="section-padding video-overlay">
-            <div className="container">
-              <h3>Watch Now</h3>
-              <i className="fa fa-play" id="video-icon" aria-hidden="true"></i>
-              <div className="video-popup">
-                <div className="video-src">
-                  <div className="iframe-src">
-                    <iframe src="https://www.youtube.com/embed/Ku52zNnft8k?rel=0&amp;showinfo=0" allowFullScreen></iframe>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <WatchNow />
 
         <section className="feature section-padding" data-scroll-index='2'>
           <div className="container">
