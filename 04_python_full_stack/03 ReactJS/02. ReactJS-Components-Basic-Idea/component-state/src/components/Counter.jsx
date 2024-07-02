@@ -12,7 +12,7 @@ export default function Counter() {
     function resetBtnClickHandler() {
         return setCount(0)
     }
-
+            
     const decrementBtnClickHandler = () => {
         setCount(count - 1)
     }
