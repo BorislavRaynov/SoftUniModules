@@ -1,4 +1,5 @@
 import { useState } from "react"
+import KillCounter from "./KillCounter"
 import './Counter.css'
 
 export default function Counter() {
@@ -26,6 +27,8 @@ export default function Counter() {
     return (
         <>
             <h2>Counter</h2>
+
+            <KillCounter count={count}/>
 
             <p
                 style={{color}} 
