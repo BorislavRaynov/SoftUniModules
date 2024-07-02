@@ -4,7 +4,7 @@ export default function Timer() {
     const [time, setTime] = useState(0)
 
     setTimeout(() => {
-        setTime(count + 1);
+        setTime(time + 1);
     }, 1000)
 
     return (
