@@ -11,6 +11,14 @@ export default function KillCounter(props) {
         title = 'Double kill!!'
     }
 
+    if (props.count > 10) {
+        title = 'GodLike!'
+    } else if (props.count > 5) {
+        title = 'Unstoppable!'
+    } else if(props.count > 3) {
+         title = 'Multi kill!'
+    }
+
     return (
         <>
             {props.count == 3
