@@ -24,6 +24,8 @@ export default function Counter() {
         color = 'red'
     }
 
+    const enableIncrement = count < 10
+
     return (
         <>
             <h2>Counter</h2>
@@ -39,7 +41,7 @@ export default function Counter() {
 
             <button onClick={decrementBtnClickHandler}>-</button>
             <button onClick={resetBtnClickHandler}>Reset</button>
-            <button onClick={incrementBtnClickHandler}>+</button>
+            {enableIncrement && <button onClick={incrementBtnClickHandler}>+</button>}
         </>
 
     )
