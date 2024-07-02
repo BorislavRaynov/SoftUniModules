@@ -1,5 +1,5 @@
 import Timer from './components/Timer'
-import Counter from './components/Counter'
+import Counter from './components/BaseCounter'
 import './App.css'
 
 function App() {
