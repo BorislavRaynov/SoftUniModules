@@ -3,8 +3,16 @@ import { useState } from "react"
 export default function Counter() {
     const [count, setCount] = useState(0)
 
-    const clickHandler = () => {
+    const incrementBtnClickHandler = () => {
         setCount(count + 1);
+    }
+
+    function resetBtnClickHandler() {
+        return setCount(0)
+    }
+
+    const decrementBtnClickHandler = () => {
+        setCount(count - 1)
     }
 
     return (
@@ -13,7 +21,9 @@ export default function Counter() {
 
             <p>{count}</p>
 
-            <button onClick={clickHandler}>+</button>
+            <button onClick={decrementBtnClickHandler}>-</button>
+            <button onClick={resetBtnClickHandler}>Reset</button>
+            <button onClick={incrementBtnClickHandler}>+</button>
         </>
 
     )
