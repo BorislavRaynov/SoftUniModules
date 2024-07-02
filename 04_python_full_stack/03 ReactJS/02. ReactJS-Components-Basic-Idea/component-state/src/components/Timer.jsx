@@ -9,7 +9,7 @@ export default function Timer() {
 
     return (
         <>
-            <h2>Counter</h2>
+            <h2>Timer</h2>
 
             <p>{count}</p>
         </>
