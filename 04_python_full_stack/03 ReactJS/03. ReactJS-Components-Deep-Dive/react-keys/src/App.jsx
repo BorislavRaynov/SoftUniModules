@@ -6,6 +6,7 @@ function App() {
 		'The Matrix',
 		'Man of Steel',
 		'Lord of t Rings',
+		'The Case of Christ',
 	]);
 
 	const btnClickHandler = () => {
@@ -21,10 +22,14 @@ function App() {
 		<>
 			<h1>Movies</h1>
 
-			<ul>
+			{/* <ul>
 				<li>{movies[0]}</li>
 				<li>{movies[1]}</li>
 				<li>{movies[2]}</li>
+			</ul> */}
+
+			<ul>
+				{movies.map(movie => <li key={movie}>{movie}</li>)}
 			</ul>
 
 			<button onClick={btnClickHandler}>Change</button>
