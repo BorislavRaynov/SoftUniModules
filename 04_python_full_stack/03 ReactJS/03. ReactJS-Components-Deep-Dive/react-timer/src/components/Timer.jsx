@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 
 export default function Timer() {
+    const [isManual, setIsManual] = useState(false)
     const [time, setTime] = useState(() => {
         const currentSeconds = new Date().getSeconds();
 
@@ -8,12 +9,16 @@ export default function Timer() {
     });
 
     useEffect(() => {
-        setTimeout(() => {
-            setTime(prevTime => prevTime + 1)
-        }, 1000);
-    }, []);
+        if (!isManual) {
+            setTimeout(() => {
+                setTime(prevTime => prevTime + 1)
+                setIsManual(false)
+            }, 1000);
+        }
+    }, [time, isManual]);
 
     const addSecondsHandler = () => {
+        setIsManual(true)
         setTime(prevTime => prevTime + 10);
     }
 
