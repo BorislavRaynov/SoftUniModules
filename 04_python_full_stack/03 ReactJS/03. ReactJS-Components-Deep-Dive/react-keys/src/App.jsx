@@ -9,8 +9,13 @@ function App() {
 	]);
 
 	const btnClickHandler = () => {
-		setMovies((oldMovies) => []);
-	}
+		setMovies((oldMovies) => {
+			const newMovies = [...oldMovies];
+			newMovies[2] = 'Harry Potter';
+
+			return newMovies
+		});
+	};
 
 	return (
 		<>
