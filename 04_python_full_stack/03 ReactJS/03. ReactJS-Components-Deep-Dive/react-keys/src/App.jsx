@@ -13,6 +13,8 @@ function App() {
 		setMovies((oldMovies) => {
 			const newMovies = [...oldMovies];
 			newMovies[2] = 'Harry Potter';
+			newMovies.push('Avengers');
+			newMovies.shift()
 
 			return newMovies
 		});
