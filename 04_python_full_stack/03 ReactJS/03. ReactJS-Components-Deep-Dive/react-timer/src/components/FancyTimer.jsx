@@ -4,9 +4,13 @@ export default function FancyTimer() {
     const [time, setTime] = useState(0)
 
     useEffect(() => {
-        setInterval(() => {
+        const timer = setInterval(() => {
             setTime(oldTime => oldTime + 1)
         }, 1000);
+
+        return () => {
+            clearTimeout(timer)
+        }
     }, [])
 
     const addSecondsHandler = () => {
@@ -15,7 +19,7 @@ export default function FancyTimer() {
 
     return (
         <>
-            <h1>Fancy Timer</h1>
+            <h2>Fancy Timer</h2>
             <div>{time}</div>
             <button onClick={addSecondsHandler}>Add Seconds</button>
         </>
