@@ -16,6 +16,12 @@ export default function Effect() {
         console.log('Update deca count')
     }, [decaCount]);
 
+    useEffect(() => {
+        return () => {
+            console.log('Component unmount');
+        };
+    }, []);
+
     const onClick = () => {
         setCount(prevCount => prevCount + 1);
         if (count % 10 === 0 && count !== 0) {

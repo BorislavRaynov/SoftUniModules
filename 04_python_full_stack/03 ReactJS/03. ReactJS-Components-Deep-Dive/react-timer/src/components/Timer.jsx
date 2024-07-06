@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Effect from "./Effect";
 
 export default function Timer() {
     const [isManual, setIsManual] = useState(false)
@@ -27,6 +28,7 @@ export default function Timer() {
             <h1>Timer</h1>
             <div>{time}</div>
             <button onClick={addSecondsHandler}>Add Seconds</button>
+            {time < 60 && <Effect />}
         </>
     )
 }
