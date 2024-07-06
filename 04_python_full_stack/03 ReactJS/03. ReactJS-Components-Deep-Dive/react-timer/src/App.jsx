@@ -1,12 +1,14 @@
 import './App.css'
 import Timer from './components/Timer'
-import Effect from './components/Effect'
+import FancyTimer from './components/FancyTimer'
 
 function App() {
 
   return (
     <>
       <Timer />
+      
+      <FancyTimer />
     </>
   )
 }
