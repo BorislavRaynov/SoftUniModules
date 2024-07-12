@@ -24,7 +24,7 @@ export default function UncontrolledForm() {
             {user.username 
                 ? <p>Hello {user.username}! <button onClick={logoutHandler}>Logout</button></p>
                 : (
-                    <form action="#" onClick={formSubmitHandler}>
+                    <form action="#" onSubmit={formSubmitHandler}>
                         <div>
                             <label htmlFor="username">Username</label>
                             <input type="text" name="username" id="username" />

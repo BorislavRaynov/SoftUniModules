@@ -1,9 +1,22 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function ControlledForm() {
     const [user, setUser] = useState({
-        username: 'Pesho',
+        _id: "",
+        username: "",
+        email: "",
+        age: "",
     })
+
+    useEffect(() => {
+        (async () => {
+            const response = await fetch('http://localhost:3030/jsonstore/advanced/profiles/fb352199-bcbc-4e1d-a1dc-ed346a6fb49a')
+            const profile = await response.json()
+
+            setUser(profile)
+        })();
+    },[]);
+
 
     const formSubmitHandler = (e) => {
         e.preventDefault();
@@ -11,18 +24,28 @@ export default function ControlledForm() {
         console.log('Form submited')
     }
 
+    const usernameChangeHandler = (e) => {
+        setUser(oldUser => ({...oldUser, username: e.target.value}))
+    }
+
     return (
         <>
             <h1>Controlled Form</h1>
 
-            <form action="#" onSubmit={formSubmitHandler}>
+            <form onSubmit={formSubmitHandler}>
                 <div>
                     <label htmlFor="username">Username</label>
-                    <input type="text" name="username" id="username" defaultValue={user.username} />
+                    <input 
+                        type="text" 
+                        name="username" 
+                        id="username" 
+                        value={user.username}
+                        onChange={usernameChangeHandler} 
+                    />
                 </div>
                 <div>
                     <label htmlFor="password">Password</label>
-                    <input type="password" name="password" id="password" />
+                    <input type="password" name="password" id="password" placeholder="********"/>
                 </div>  
                 <div>
                     <input type="submit" value="login" />
