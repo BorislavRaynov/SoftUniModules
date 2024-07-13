@@ -1,7 +1,9 @@
 import { useState } from "react";
 
 export default function UncontrolledForm() {
-    const [user, setUser] = useState({})
+    console.log('Render - UncontrolledForm');
+
+    const [user, setUser] = useState({});
 
     const formSubmitHandler = (e) => {
         e.preventDefault();
@@ -10,31 +12,37 @@ export default function UncontrolledForm() {
 
         setUser({
             username: formData.get('username'),
-        })
-    }
+        });
+    };
 
     const logoutHandler = (e) => {
-        setUser({})
-    }
+        setUser({});
+    };
+
+    const usernamneInputHandler = (e) => {
+        // console.log(e.target.value);
+    };
 
     return (
         <>
             <h1>Uncontrolled Form</h1>
 
-            {user.username 
+            {user.username
                 ? <p>Hello {user.username}! <button onClick={logoutHandler}>Logout</button></p>
                 : (
-                    <form action="#" onSubmit={formSubmitHandler}>
+                    <form onSubmit={formSubmitHandler}>
                         <div>
                             <label htmlFor="username">Username</label>
-                            <input type="text" name="username" id="username" />
+                            <input type="text" name="username" id="username" onInput={usernamneInputHandler}/>
                         </div>
+
                         <div>
                             <label htmlFor="password">Password</label>
                             <input type="password" name="password" id="password" />
-                        </div>  
+                        </div>
+
                         <div>
-                            <input type="submit" value="login" />
+                            <input type="submit" value="Login" />
                         </div>
                     </form>
                 )
